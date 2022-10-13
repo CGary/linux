@@ -8,6 +8,6 @@ wget -P autoload https://raw.githubusercontent.com/junegunn/vim-plug/master/plug
 cd
 
 # graphic interface
-sudo apt install  -y
+sudo apt install firmware-misc-nonfree software-properties-common -y
 
 #END

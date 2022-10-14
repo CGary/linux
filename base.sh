@@ -6,7 +6,7 @@ sudo apt autoremove
 echo "************ Add Volian source repo..."
 echo "deb-src https://deb.volian.org/volian/ scar main" | sudo tee -a /etc/apt/sources.list.d/volian-archive-scar-unstable.list
 echo "************ Copy source.list..."
-sudo cp source.list /etc/apt/source.list
+sudo cp sources.list /etc/apt/sources.list
 sudo apt update
 echo "************ Install packages..."
 sudo apt install zsh neovim curl wget nala-legacy software-properties-common firmware-linux-free firmware-linux-nonfree firmware-misc-nonfree make gcc build-essential -y

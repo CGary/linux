@@ -14,11 +14,3 @@ cd debian
 sudo reboot
 ./install-f3.sh
 ```
-
-Install VirtualBox Guest Additions on Debian 11
-```bash
-sudo mkdir /mnt/cdrom
-sudo mount /dev/sr0 /mnt/cdrom
-sudo sh /mnt/cdrom/VBoxLinuxAdditions.run
-sudo umount /mnt/cdrom
-```

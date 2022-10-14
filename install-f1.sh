@@ -1,4 +1,6 @@
 #!/bin/bash
+
+apt install fasttrack-archive-keyring -y
 echo "************ Copy source.list..."
 sudo cp sources.list /etc/apt/sources.list
 echo "************ Add Volian source repo..."

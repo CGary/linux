@@ -1,6 +1,6 @@
 #!/bin/bash
 
 # 
-sudo apt install firmware-misc-nonfree software-properties-common nala-legacy -y
+sudo apt install firmware-misc-nonfree software-properties-common -y
 
 #END

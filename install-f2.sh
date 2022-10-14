@@ -8,7 +8,7 @@ echo "************ Install packages..."
 sudo apt update
 sudo apt upgrade -y
 sudo apt install nala-legacy -y
-sudo nala install zsh neovim curl wget neofetch software-properties-common firmware-realtek firmware-linux-free firmware-linux-nonfree firmware-misc-nonfree make gcc build-essential xorg xterm openbox obconf lightdm lightdm-gtk-greeter terminator lm-sensors psensor hardinfo i3 pulseaudio pavucontrol snapd rofi brightnessctl -y
+sudo nala install -y zsh neovim curl wget neofetch software-properties-common firmware-realtek firmware-linux-free firmware-linux-nonfree firmware-misc-nonfree make gcc build-essential xorg xterm lightdm lightdm-gtk-greeter terminator i3 snapd rofi
 echo "************ Configure vim..."
 mkdir ~/.config
 cd ~/.config

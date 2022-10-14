@@ -1,6 +1,8 @@
 #!/bin/bash
 echo "********** Install packages..."
-sudo nala install firefox-esr virtualbox virtualbox-ext-pack -y
+sudo nala update
+sudo nala upgrade -y
+sudo nala install -y lm-sensors psensor hardinfo pulseaudio pavucontrol brightnessctl firefox-esr virtualbox virtualbox-ext-pack gzip ca-certificates curl gnupg lsb-release
 echo "********** Install Google Chrome..."
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb -y
@@ -16,17 +18,15 @@ sudo apt-get remove -y docker docker-engine docker.io containerd runc docker-com
 sudo rm -rf /var/lib/docker
 sudo rm -rf /var/lib/containerd
 sudo rm /usr/local/bin/docker-compose
-sudo apt-get -y autoremove
+sudo apt-get autoremove -y
 echo "********** Install docker dependencies"
-sudo apt-get update
-sudo apt-get install -y gzip ca-certificates curl gnupg lsb-release
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list >/dev/null
 echo "********** Install docker"
-sudo apt-get update
-sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo nala update
+sudo nala install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 echo "********** Run services"
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service

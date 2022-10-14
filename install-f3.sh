@@ -2,7 +2,7 @@
 echo "********** Install packages..."
 sudo nala update
 sudo nala upgrade -y
-sudo nala install -y lm-sensors psensor hardinfo pulseaudio pavucontrol brightnessctl firefox-esr virtualbox virtualbox-ext-pack gzip ca-certificates curl gnupg lsb-release
+sudo nala install -y lm-sensors psensor hardinfo pulseaudio pavucontrol firefox-esr virtualbox virtualbox-ext-pack gzip ca-certificates curl gnupg lsb-release
 echo "********** Install Google Chrome..."
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb -y

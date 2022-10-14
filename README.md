@@ -4,7 +4,7 @@
 su root
 apt update
 apt upgrade -y
-apt-get install sudo git -y
+apt install sudo git -y
 sudo adduser [user] sudo
 sudo reboot
 git clone https://github.com/CGary/debian.git

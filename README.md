@@ -9,11 +9,11 @@ sudo adduser [user] sudo
 sudo reboot
 git clone https://github.com/CGary/debian.git
 cd debian
-./base.sh
+./install-f1.sh
 sudo vim /etc/apt/sources.list
-apt update
-apt upgrade -y
 sudo reboot
+cd debian
+./install-f2.sh
 ```
 
 

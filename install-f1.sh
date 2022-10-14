@@ -1,16 +1,15 @@
 #!/bin/bash
+
 echo "************ Remove vi..."
 sudo apt remove vim
 sudo apt autoclean
 sudo apt autoremove
-echo "************ Copy sources.list..."
-sudo cp sources.list /etc/apt/sources.list
 echo "************ Add Volian source repo..."
 echo "deb-src https://deb.volian.org/volian/ scar main" | sudo tee -a /etc/apt/sources.list.d/volian-archive-scar-unstable.list
 wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg > /dev/null
 echo "************ Install packages..."
 sudo apt update
-sudo apt install zsh neovim curl wget nala-legacy software-properties-common firmware-linux-free firmware-linux-nonfree firmware-misc-nonfree make gcc build-essential -y
+sudo apt install zsh neovim curl wget nala-legacy -y
 echo "************ Configure vim..."
 mkdir ~/.config
 cd ~/.config

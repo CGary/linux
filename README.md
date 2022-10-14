@@ -12,6 +12,7 @@ cd debian
 ./install-f1.sh
 ./install-f2.sh
 sudo reboot
+./install-f3.sh
 ```
 
 

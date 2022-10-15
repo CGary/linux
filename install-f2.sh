@@ -9,7 +9,7 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt install nala-legacy -y
 sudo nala install -y software-properties-common firmware-realtek firmware-linux-free firmware-linux-nonfree firmware-misc-nonfree make gcc build-essential dkms linux-headers-$(uname -r)
-sudo nala install -y zsh neovim curl wget neofetch xorg xterm xauth lightdm lightdm-gtk-greeter terminator i3 i3lock rofi brightnessctl snapd
+sudo nala install -y zsh neovim curl wget neofetch xorg xterm xauth lightdm lightdm-gtk-greeter terminator i3 i3lock rofi brightnessctl snapd libnotify-bin
 echo "************ Configure vim i3..."
 mkdir ~/.config
 cd ~/.config

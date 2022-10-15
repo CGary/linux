@@ -24,5 +24,5 @@ sudo snap install core
 sudo snap install hello-world
 hello-world
 sudo snap install --classic code
-echo PATH="$PATH:/snap/bin" >> .xsessionrc
+echo 'PATH="$PATH:/snap/bin"' >> .xsessionrc
 #END

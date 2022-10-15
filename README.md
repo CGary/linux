@@ -11,6 +11,7 @@ git clone https://github.com/CGary/debian.git
 cd debian
 ./install-f1.sh
 ./install-f2.sh
-sudo reboot
 ./install-f3.sh
+sudo reboot
+./install-f4.sh
 ```

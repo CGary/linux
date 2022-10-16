@@ -9,9 +9,11 @@ sudo adduser [user] sudo
 sudo reboot
 git clone https://github.com/CGary/debian.git
 cd debian
-./install-f1.sh
-./install-f2.sh
-./install-f3.sh
+./1-install-initial.sh
+./2-install-terminal.sh
+./3-install-graphics.sh
 sudo reboot
-./install-f4.sh
+./4-install-drivers.sh
+sudo reboot
+./5-install-tools.sh
 ```

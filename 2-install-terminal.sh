@@ -6,8 +6,6 @@ dpkg -s nala-legacy &>/dev/null
 if [ $? -ne 0 ]; then
   sudo apt install nala-legacy -y
 fi
-echo "************ Remove old vim..."
-sudo nala remove vim
 echo "************ Install packages..."
 sudo nala install -y zsh neovim curl wget neofetch
 echo "************ Configure neovim..."

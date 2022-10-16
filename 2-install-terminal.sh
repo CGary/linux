@@ -1,16 +1,14 @@
 #!/bin/bash
 
-echo "************ Remove old vim..."
-sudo apt remove vim
-sudo apt autoclean
-sudo apt autoremove
-echo "************ Install packages..."
 sudo apt update
 sudo apt upgrade -y
 dpkg -s nala-legacy &>/dev/null
 if [ $? -ne 0 ]; then
   sudo apt install nala-legacy -y
 fi
+echo "************ Remove old vim..."
+sudo nala remove vim
+echo "************ Install packages..."
 sudo nala install -y zsh neovim curl wget neofetch
 echo "************ Configure neovim..."
 DIR="$HOME/.config"

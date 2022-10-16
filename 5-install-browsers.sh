@@ -1,9 +1,11 @@
 #!/bin/bash
 
-echo "********** Install firefox..."
+echo "********** Install Browsers..."
+sudo wget -O- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-edge.gpg
+echo 'deb [signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.microsoft.com/repos/edge stable main' | sudo tee /etc/apt/sources.list.d/microsoft-edge.list
+sudo nala update
 sudo nala upgrade -y
-sudo nala install -y firefox-esr
-echo "********** Install Google Chrome..."
+sudo nala install -y firefox-esr microsoft-edge-stable
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb -y
 sudo rm -rf google-chrome-stable_current_amd64.deb

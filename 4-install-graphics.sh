@@ -11,6 +11,8 @@ sudo nala install -y lightdm lightdm-gtk-greeter terminator i3 i3lock rofi brigh
 echo "************ Configure i3..."
 DIR="$HOME/.config"
 if [ -d "$DIR" ]; then
+  echo "$HOME/.config EXITS"
+else
   mkdir ~/.config
 fi
 cd ~/.config

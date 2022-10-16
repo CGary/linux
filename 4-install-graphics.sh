@@ -7,7 +7,8 @@ if [ $? -ne 0 ]; then
 fi
 sudo nala update
 sudo nala upgrade -y
-sudo nala install -y xorg xterm xauth lightdm lightdm-gtk-greeter terminator i3 i3lock rofi brightnessctl libnotify-bin
+# xorg xterm xauth
+sudo nala install -y lightdm lightdm-gtk-greeter terminator i3 i3lock rofi brightnessctl libnotify-bin
 echo "************ Configure i3..."
 DIR="$HOME/.config"
 if [ -d "$DIR" ]; then

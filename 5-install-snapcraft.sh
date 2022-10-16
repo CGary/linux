@@ -11,5 +11,6 @@ sudo snap install spotify
 sudo snap install remmina
 sudo snap install dbeaver-ce
 echo 'PATH="$PATH:/snap/bin"' >> ~/.xsessionrc
+echo 'export XDG_DATA_DIRS=/usr/local/share/:/usr/share/:/var/lib/snapd/desktop' >> ~/.xsessionrc
 
 #END

@@ -1,11 +1,16 @@
 #!/bin/bash
 
-dpkg -s nala-legacy &>/dev/null
-
-if [ $? -ne 0 ]; then
-  echo "not installed"
+echo "************ Configure neovim..."
+DIR="$HOME/.config"
+if [ -d "$DIR" ]; then
+  echo "$HOME/.config EXISTS"
 else
-  echo "installed"
+  mkdir ~/.config
 fi
+cd ~/.config
+git clone https://github.com/CGary/nvim.git
+cd nvim
+wget -P autoload https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+cd
 
 #END

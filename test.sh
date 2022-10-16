@@ -1,5 +1,8 @@
 #!/bin/bash
 
-echo 'PATH="$PATH:/snap/bin"' >>~/.xsessionrc
+dpkg -s network-manager &>/dev/null
+if [ $? -ne 0 ]; then
+  echo "no esta instalado network-manager"
+fi
 
 #END

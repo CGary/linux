@@ -1,6 +1,6 @@
 #!/bin/bash
+
 echo "********** Install packages..."
-sudo nala update
 sudo nala upgrade -y
 sudo nala install -y lm-sensors psensor hardinfo pulseaudio pavucontrol firefox-esr virtualbox virtualbox-ext-pack gzip ca-certificates curl gnupg lsb-release
 echo "********** Install Google Chrome..."

@@ -8,6 +8,7 @@ sudo snap install core
 sudo snap install code --classic
 sudo snap install slack
 sudo snap install spotify
+sudo snap install remmina
 echo 'PATH="$PATH:/snap/bin"' >>~/.xsessionrc
 
 #END

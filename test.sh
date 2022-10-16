@@ -1,8 +1,5 @@
 #!/bin/bash
 
-dpkg -s network-manager &>/dev/null
-if [ $? -ne 0 ]; then
-  echo "no esta instalado network-manager"
-fi
+echo 'export XDG_DATA_DIRS=/usr/local/share/:/usr/share/:/var/lib/snapd/desktop' >> ~/.xsessionrc
 
 #END

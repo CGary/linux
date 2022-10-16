@@ -16,6 +16,7 @@ else
   sudo rm -rf /var/lib/containerd
   sudo rm /usr/local/bin/docker-compose
   sudo apt-get autoremove -y
+  echo "********** Install docker"
 fi
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 echo \
@@ -31,9 +32,9 @@ if grep -q "docker" /etc/group; then
   echo "********** Docker group already exists"
 else
   echo "********** Add group docker"
-  sudo groupadd docker
-  sudo usermod -aG docker $USER
-  newgrp docker
+  sudo groupadd docker  
 fi
+sudo usermod -aG docker $USER
+newgrp docker
 
 #END

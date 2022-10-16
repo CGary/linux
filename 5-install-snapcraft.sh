@@ -10,6 +10,6 @@ sudo snap install slack
 sudo snap install spotify
 sudo snap install remmina
 sudo snap install dbeaver-ce
-echo 'PATH="$PATH:/snap/bin"' >>~/.xsessionrc
+echo 'PATH="$PATH:/snap/bin"' >> ~/.xsessionrc
 
 #END

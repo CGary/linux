@@ -9,7 +9,7 @@ sudo adduser [user] sudo
 sudo reboot
 git clone https://github.com/CGary/debian.git
 cd debian
-./1-install-initial.sh
+./1-install-source.list.sh
 ./2-install-terminal.sh
 ./3-install-graphics.sh
 sudo reboot

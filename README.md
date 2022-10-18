@@ -16,5 +16,5 @@ sudo reboot
 ./4-install-drivers.sh
 sudo reboot
 ./5-install-[utilidad].sh
-nvm alias default va.b.c
+nvm alias default v [a.b.c]
 ```

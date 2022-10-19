@@ -16,5 +16,9 @@ sudo reboot
 ./4-install-drivers.sh
 sudo reboot
 ./5-install-[utilidad].sh
+command -v nvm
+exit
+nvm install --lts
+nvm install node
 nvm alias default v [a.b.c]
 ```

@@ -7,7 +7,7 @@ if [ $? -ne 0 ]; then
 fi
 sudo nala update
 # xorg display server installation
-sudo nala install xorg
+sudo nala install -y xorg
 # i3
 sudo nala install -y terminator i3 i3lock rofi brightnessctl
 # Create folders in user directory (eg. Documents,Downloads,etc.)

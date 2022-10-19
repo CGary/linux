@@ -5,7 +5,7 @@ dpkg -s nala-legacy &>/dev/null
 if [ $? -ne 0 ]; then
   sudo apt install nala-legacy -y
 fi
-sudo nala upgrade -y
+sudo nala update
 # xorg display server installation
 sudo nala install xorg
 # i3

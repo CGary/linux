@@ -1,7 +1,6 @@
 #!/bin/bash
 
 sudo apt update
-sudo apt upgrade -y
 dpkg -s nala-legacy &>/dev/null
 if [ $? -ne 0 ]; then
   sudo apt install nala-legacy -y

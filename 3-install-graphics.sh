@@ -10,6 +10,8 @@ sudo nala update
 sudo nala install -y xorg
 # i3
 sudo nala install -y terminator i3 i3lock rofi brightnessctl
+# Compiler toots
+sudo nala install -y build-essential libpam0g-dev libxcb-xkb-dev
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
 echo "************ Configure i3..."

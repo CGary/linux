@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "********** Install snapd..."
-sudo nala upgrade -y
+sudo nala update
 sudo nala install -y snapd
 echo "************ Install snap packages..."
 sudo snap install core

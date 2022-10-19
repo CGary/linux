@@ -5,7 +5,6 @@ sudo wget -O- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor 
 echo 'deb [signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.microsoft.com/repos/edge stable main' | sudo tee /etc/apt/sources.list.d/microsoft-edge.list
 
 sudo nala update
-sudo nala upgrade -y
 sudo nala install -y firefox-esr microsoft-edge-stable
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb

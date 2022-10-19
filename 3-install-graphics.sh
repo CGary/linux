@@ -2,7 +2,7 @@
 
 echo "************ Install packages..."
 sudo nala update
-sudo nala install -y lightdm lightdm-gtk-greeter terminator i3 i3lock rofi brightnessctl
+sudo nala install -y lightdm terminator i3 i3lock rofi brightnessctl
 echo "************ Configure i3..."
 DIR="$HOME/.config"
 if [ -d "$DIR" ]; then

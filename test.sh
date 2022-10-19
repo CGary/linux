@@ -1,5 +1,6 @@
 #!/bin/bash
 
-sudo nala install -y build-essential libpam0g-dev libxcb-xkb-dev
+# Create folders in user directory (eg. Documents,Downloads,etc.)
+xdg-user-dirs-update
 
 #END

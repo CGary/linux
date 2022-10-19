@@ -13,5 +13,7 @@ fi
 cd ~/.config
 git clone https://github.com/CGary/i3.git
 cd
+# Create folders in user directory (eg. Documents,Downloads,etc.)
+xdg-user-dirs-update
 
 #END

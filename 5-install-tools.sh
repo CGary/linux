@@ -11,10 +11,5 @@ sudo nala install -y libreoffice-writer libreoffice-calc
 sudo nala install -y psensor hardinfo gzip ca-certificates libnotify-bin network-manager gimp pcmanfm filelight htop  filezilla balena-etcher-electron flameshot pqiv ephoto zathura
 # Sound packages
 sudo nala install -y alsa-utils pulseaudio pavucontrol volumeicon-alsa
-# node.js
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-command -v nvm
-nvm install --lts
-nvm install node
 
 #END

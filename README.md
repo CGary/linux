@@ -21,4 +21,5 @@ exit
 nvm install --lts
 nvm install node
 nvm alias default v [a.b.c]
+nitrogen -> /user/shared/backgrounds
 ```

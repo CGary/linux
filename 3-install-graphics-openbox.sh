@@ -2,7 +2,7 @@
 
 echo "************ Install packages..."
 sudo nala update
-sudo nala install -y xorg xterm openbox obconf lightdm lightdm-gtk-greeter tint2 nitrogen terminator brightnessctl lxappearance papirus-icon-theme
+sudo nala install -y xorg xterm openbox obconf obmenu lightdm tint2 nitrogen terminator brightnessctl lxappearance papirus-icon-theme gnome-backgrounds mate-backgrounds
 echo "************ Configure autostart..."
 DIR="$HOME/.config"
 if [ -d "$DIR" ]; then

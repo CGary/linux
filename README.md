@@ -13,8 +13,8 @@ cd debian
 ./2-install-terminal.sh
 [./3-install-alacritty.sh]
 [sudo nala install -y terminator]
-[./3-install-graphics-i3.sh]
-[./3-install-graphics-openbox.sh]
+./3-install-[graphics system].sh
+[sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator "$HOME/.cargo/bin/alacritty" 50]
 sudo reboot
 ./4-install-drivers.sh
 sudo reboot

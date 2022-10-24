@@ -15,6 +15,7 @@ cd debian
 [sudo nala install -y terminator]
 ./3-install-[graphics system].sh
 [sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator "$HOME/.cargo/bin/alacritty" 50]
+[sudo update-alternatives --config x-terminal-emulator]
 sudo reboot
 ./4-install-drivers.sh
 sudo reboot

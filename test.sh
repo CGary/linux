@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Create folders in user directory (eg. Documents,Downloads,etc.)
-xdg-user-dirs-update
+mkdir $HOME/.config/alacritty
+cp alacritty.yml $HOME/.config/alacritty/alacritty.yml
 
 #END

@@ -1,2 +1,4 @@
 font:
   size: 8
+key_bindings:
+  - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }

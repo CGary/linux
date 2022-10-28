@@ -6,7 +6,7 @@ if [ $? -ne 0 ]; then
   sudo apt install nala-legacy -y
 fi
 echo "************ Install packages..."
-sudo nala install -y zsh neovim curl wget neofetch
+sudo nala install -y zsh neovim curl wget neofetch tree
 echo "************ Configure neovim..."
 DIR="$HOME/.config"
 if [ -d "$DIR" ]; then

@@ -1,10 +1,7 @@
 #!/bin/bash
 
-sudo apt update
-dpkg -s nala-legacy &>/dev/null
-if [ $? -ne 0 ]; then
-  sudo apt install nala-legacy -y
-fi
+. install-nala
+install_nala
 echo "************ Install packages..."
 sudo nala install -y zsh neovim curl wget neofetch tree
 echo "************ Configure neovim..."

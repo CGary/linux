@@ -1,7 +1,8 @@
 #!/bin/bash
 
+. install-nala
+install_nala
 echo "************ Install packages..."
-sudo nala update
 sudo nala install -y lightdm xterm i3 i3lock rofi brightnessctl
 echo "************ Configure i3..."
 DIR="$HOME/.config"

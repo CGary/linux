@@ -1,7 +1,8 @@
 #!/bin/bash
 
+. install-nala
+install_nala
 echo "************ Install packages..."
-sudo nala update
 sudo nala install -y xorg xterm openbox obconf obmenu lightdm tint2 nitrogen brightnessctl lxappearance papirus-icon-theme gnome-backgrounds mate-backgrounds
 echo "************ Configure autostart..."
 DIR="$HOME/.config"

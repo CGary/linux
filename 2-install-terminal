@@ -1,12 +1,10 @@
 #!/bin/bash
 
-sudo apt update
-dpkg -s nala-legacy &>/dev/null
-if [ $? -ne 0 ]; then
-  sudo apt install nala-legacy -y
-fi
+. install-nala
+install_nala
+cp .bash_aliases ~/
 echo "************ Install packages..."
-sudo nala install -y zsh neovim curl wget neofetch tree
+sudo nala install -y zsh neovim curl wget neofetch tree bat exa
 echo "************ Configure neovim..."
 DIR="$HOME/.config"
 if [ -d "$DIR" ]; then
@@ -21,5 +19,7 @@ wget -P autoload https://raw.githubusercontent.com/junegunn/vim-plug/master/plug
 cd
 echo "************ Install ohmyzsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
+echo "if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi" >> ~/.zshrc
 #END

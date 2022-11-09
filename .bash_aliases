@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # DOCKER
 alias dei='docker exec -it'
@@ -8,6 +8,10 @@ alias dr='docker restart'
 alias ds='docker stop'
 alias dcud='docker compose up -d'
 alias dcd='docker compose down'
+
+# APT_GET
+alias agd='_ apt-get update'
+alias agg='_ apt-get upgrade -y'
 
 # APT_GET
 alias agd='_ apt-get update'

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. install-nala
+install_nala
 dpkg -s docker-ce &>/dev/null
 if [ $? -ne 0 ]; then
   echo "********** Install docker"

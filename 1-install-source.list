@@ -1,6 +1,0 @@
-#!/bin/bash
-
-sudo apt install fasttrack-archive-keyring -y
-sudo cp sources.list /etc/apt/sources.list
-
-#END

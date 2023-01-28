@@ -19,6 +19,7 @@ sudo reboot
 ./4-install-drivers
 sudo reboot
 ./5-install-[utilidad].sh
+[sudo /opt/balenaEtcher/balena-etcher-electron]
 
 command -v nvm
 exit
@@ -33,6 +34,7 @@ fi
 source .zshrc
 tldr -u
 ```
+# herramientas de consola
 https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 
 https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md

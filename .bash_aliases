@@ -13,10 +13,6 @@ alias dcd='docker compose down'
 alias agd='_ apt-get update'
 alias agg='_ apt-get upgrade -y'
 
-# APT_GET
-alias agd='_ apt-get update'
-alias agg='_ apt-get upgrade -y'
-
 # SYSTEM
 alias rb='_ reboot'
 alias sys='systemctl suspend'

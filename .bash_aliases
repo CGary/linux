@@ -21,5 +21,8 @@ alias bat='batcat'
 alias ll='exa -lhG'
 alias la='exa -lhGa'
 alias clr='clear'
+alias clip='xclip -sel c'
+alias compress='tar czvf'
+alias decompress='tar xzvf'
 
 #END

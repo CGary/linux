@@ -16,6 +16,7 @@ alias agg='_ apt-get upgrade -y'
 # SYSTEM
 alias rb='_ reboot'
 alias sys='systemctl suspend'
+alias lock='i3lock -c 000000 && systemctl suspend'
 alias bat='batcat'
 alias ll='exa -lhG'
 alias la='exa -lhGa'

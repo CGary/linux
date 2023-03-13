@@ -25,4 +25,6 @@ alias clip='xclip -sel c'
 alias compress='tar czvf'
 alias decompress='tar xzvf'
 
+# CNN
+
 #END

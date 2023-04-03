@@ -20,6 +20,7 @@ sudo reboot
 sudo reboot
 ./5-install-[utilidad].sh
 [sudo /opt/balenaEtcher/balena-etcher-electron]
+./last-config
 
 command -v nvm
 exit
@@ -28,11 +29,6 @@ nvm install node
 nvm alias default v[a.b.c]
 nitrogen -> /user/shared/backgrounds
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-source .zshrc
-tldr -u
 ```
 # herramientas de consola
 https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md

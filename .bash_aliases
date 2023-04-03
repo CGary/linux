@@ -26,11 +26,4 @@ alias clip='xclip -sel c'
 alias compress='tar czvf'
 alias decompress='tar xzvf'
 
-# CNN
-alias cnn-dev-front='ssh -i /home/cgary/.ssh/gary.pem ubuntu@ec2-54-208-169-214.compute-1.amazonaws.com'
-alias cnn-stg-front='ssh -i /home/cgary/.ssh/gary.pem ubuntu@ec2-3-83-12-130.compute-1.amazonaws.com'
-alias cnn-prod-front='ssh -i /home/cgary/.ssh/gary.pem ubuntu@ec2-34-226-194-75.compute-1.amazonaws.com'
-alias cnn-dev-back='ssh -i /home/cgary/.ssh/gary.pem ubuntu@ec2-54-159-199-20.compute-1.amazonaws.com'
-alias cnn-stg-back='ssh -i /home/cgary/.ssh/gary.pem ubuntu@ec2-54-226-163-218.compute-1.amazonaws.com'
-
 #END

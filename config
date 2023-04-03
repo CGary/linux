@@ -1,0 +1,36 @@
+[global_config]
+  title_hide_sizetext = True
+  title_transmit_bg_color = "#49a835"
+  title_receive_bg_color = "#c80003"
+  inactive_color_offset = 0.90625
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
+  title_use_system_font = False
+  title_font = Monospace Bold 8
+[keybindings]
+[profiles]
+  [[default]]
+    background_color = "#10111b"
+    cursor_color = "#aaaaaa"
+    cursor_color_fg = False
+    font = MesloLGS NF 8
+    scrollback_infinite = True
+    palette = "#2e3436:#ef4a9e:#00d2bc:#e7ca7a:#9399fa:#ca5bcc:#86d079:#d3d7cf:#555753:#ef4a9e:#00d2bc:#e7ca7a:#9399fa:#ca5bcc:#86d079:#eeeeec"
+    use_system_font = False
+  [[After Dark]]
+    background_color = "#10111b"
+    cursor_color = "#aaaaaa"
+    cursor_color_fg = False
+    font = Noto Mono 8
+    scrollback_infinite = True
+    palette = "#2e3436:#ef4a9e:#00d2bc:#e7ca7a:#9399fa:#ca5bcc:#86d079:#d3d7cf:#555753:#ef4a9e:#00d2bc:#e7ca7a:#9399fa:#ca5bcc:#86d079:#eeeeec"
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+[plugins]

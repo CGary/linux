@@ -3,7 +3,7 @@
 . install-nala
 install_nala
 echo "************ Install packages..."
-sudo nala install -y lightdm xterm i3 i3lock rofi brightnessctl blueman network-manager-gnome
+sudo nala install -y lightdm xterm i3 i3lock rofi brightnessctl
 echo "************ Configure i3..."
 DIR="$HOME/.config"
 if [ -d "$DIR" ]; then

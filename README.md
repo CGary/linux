@@ -29,6 +29,10 @@ nvm install node
 nvm alias default v[a.b.c]
 nitrogen -> /user/shared/backgrounds
 
+https://unetbootin.github.io/linux_download.html
+Downloads 64 bits binaries
+chmod +x unetbootin-linux64-702.bin
+
 ```
 # herramientas de consola
 https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md

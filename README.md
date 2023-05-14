@@ -31,7 +31,7 @@ nitrogen -> /user/shared/backgrounds
 
 https://unetbootin.github.io/linux_download.html
 Downloads 64 bits binaries
-chmod +x unetbootin-linux64-702.bin
+chmod +x unetbootin-linux64-[version].bin
 
 ```
 # herramientas de consola

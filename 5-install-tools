@@ -9,6 +9,6 @@ if [ $? -ne 0 ]; then
 fi
 echo "********** Install packages..."
 
-sudo nala install -y libreoffice-writer libreoffice-calc psensor hardinfo gzip ca-certificates libnotify-bin network-manager gimp pcmanfm filelight htop filezilla flameshot pqiv ephoto zathura alsa-utils pulseaudio pavucontrol volumeicon-alsa simplescreenrecorder screenkey zip unzip mc gpm bc fzf shellcheck tldr font-manager blueman network-manager-gnome baobab gnome-disk-utility tmate
+sudo nala install -y libreoffice-writer libreoffice-calc psensor hardinfo gzip ca-certificates libnotify-bin network-manager gimp pcmanfm filelight htop filezilla flameshot pqiv ephoto zathura alsa-utils pulseaudio pavucontrol volumeicon-alsa simplescreenrecorder screenkey zip unzip mc gpm bc fzf shellcheck tldr font-manager blueman network-manager-gnome baobab gnome-disk-utility tmate mtools
 
 #END

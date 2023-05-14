@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+cd dev
+git clone git@github.com:loimu/rtbth-dkms.git
+cd rtbth-dkms
+make
+sudo make install
+sudo rmmod rtbth
+sudo modprobe rtbth
+
+#END

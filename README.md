@@ -32,6 +32,8 @@ https://unetbootin.github.io/linux_download.html
 Downloads 64 bits binaries
 chmod +x unetbootin-linux64-[version].bin
 
+https://slack.com/intl/es-bo/downloads/linux
+
 ```
 # herramientas de consola
 https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md

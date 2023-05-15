@@ -19,7 +19,6 @@ sudo reboot
 ./4-install-drivers
 sudo reboot
 ./5-install-[utilidad].sh
-[sudo /opt/balenaEtcher/balena-etcher-electron]
 ./last-config
 
 command -v nvm

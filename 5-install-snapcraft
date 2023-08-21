@@ -1,7 +1,5 @@
 #!/bin/bash
 
-. install-nala
-install_nala
 echo "********** Install snapd..."
 sudo nala install -y snapd
 echo "************ Install snap packages..."

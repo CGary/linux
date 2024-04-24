@@ -43,5 +43,7 @@ https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
 https://github.com/romkatv/powerlevel10k#getting-started
 
 https://github.com/EliverLara/terminator-themes
-
 (use After Dark theme)
+
+https://www.lazyvim.org/
+(install all requirements)

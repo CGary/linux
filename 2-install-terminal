@@ -2,19 +2,13 @@
 
 cp .bash_aliases ~/
 echo "************ Install packages..."
-sudo nala install -y zsh curl wget neofetch tree bat exa
+sudo nala install -y zsh curl wget neofetch tree bat exa ninja-build gettext cmake unzip curl build-essential
 echo "************ Configure neovim..."
 
-if [ -d "$HOME/.Downloads" ]; then
-	echo "$HOME/.Downloads EXITS"
-else
-	mkdir "$HOME/.Downloads"
-fi
-cd ~/.Downloads
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
-sudo rm -rf /opt/nvim
-sudo tar -C /opt -xzf nvim-linux64.tar.gz
-rm nvim-linux64.tar.gz
+cd ..
+git clone https://github.com/neovim/neovim
+cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
+cd build && cpack -G DEB && sudo dpkg -i nvim-linux64.deb
 cd
 
 if [ -d "$HOME/.config" ]; then

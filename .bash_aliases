@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # DOCKER
-alias dei='docker exec -it'
+alias deit='docker exec -it'
 alias de='docker exec'
 alias dl='docker logs --tail 10000 -f'
 alias dr='docker restart'

@@ -9,6 +9,7 @@ alias ds='docker stop'
 alias dcud='docker compose up -d'
 alias dcd='docker compose down'
 alias dcs='docker compose stop'
+alias dcr='docker compose restart'
 
 # APT_GET
 alias agd='_ apt-get update'

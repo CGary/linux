@@ -29,8 +29,8 @@ alias clip='xclip -sel c'
 alias compress='tar czvf'
 alias decompress='tar xzvf'
 
-ai() {
-  python3 scripts/ai.py "$@"
+cursor() {
+  /opt/cursor.appimage "$@" </dev/null &>/dev/null &!
 }
 
 #END

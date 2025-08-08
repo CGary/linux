@@ -30,5 +30,6 @@ alias cl='clear && cd'
 alias clip='xclip -sel c'
 alias compress='tar czvf'
 alias decompress='tar xzvf'
+alias mirror='xrandr --output HDMI-1 --mode 1280x720 --same-as eDP-1'
 
 #END

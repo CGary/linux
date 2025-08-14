@@ -31,5 +31,6 @@ alias clip='xclip -sel c'
 alias compress='tar czvf'
 alias decompress='tar xzvf'
 alias mirror='xrandr --output HDMI-1 --mode 1280x720 --same-as eDP-1'
+alias recordm4a='ffmpeg -f pulse -i default -f pulse -i alsa_output.pci-0000_00_1f.3.analog-stereo.monitor -filter_complex amix=inputs=2:duration=longest -c:a aac -b:a 128k'
 
 #END

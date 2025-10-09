@@ -1,0 +1,4 @@
+google-chrome
+slack-desktop-wayland
+spotify
+visual-studio-code-bin
